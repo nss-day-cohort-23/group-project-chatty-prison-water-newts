@@ -5,6 +5,7 @@ const msgBoard = document.querySelector("#msg-board");
 const darkTheme = document.getElementById('darkTheme');
 let container = document.getElementById('container');
 
+
 lgTxt.addEventListener('change', function(){
     if(this.checked){
         msgBoard.style = 'font-size: 1.45em';
@@ -16,7 +17,6 @@ lgTxt.addEventListener('change', function(){
 
 
 // Dark Theme Event Listener
-
 darkTheme.addEventListener("click", checked);
 
   function checked() {
