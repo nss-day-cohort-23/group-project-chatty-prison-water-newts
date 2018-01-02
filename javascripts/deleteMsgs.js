@@ -30,6 +30,11 @@ output.addEventListener("click", function (event) {
                 outputData.replaceMsg(event.target.parentNode, editableText.value);
             }
         });
+        editableText.addEventListener('keypress', function (e) {
+            if (e.keyCode === 13) {
+                outputData.replaceMsg(event.target.parentNode, editableText.value);
+            }
+        });
     }
 });
 
